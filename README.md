@@ -4,17 +4,15 @@ UI/UX Features
 The software will have to have a calendar shown to the user with the different berths availability. 
 When the user selects a date, a pop up should be displayed allowing the user to input details for vessel name, length, operator, contact, work number, cell number, and email. The user should also be able to select the period to reserve the berth. The system should verify the vessel length does not exceed the berth length.
 Tech Stack
-Frontend: React / Next.js with Bryntum Gantt or FullCalendar Timeline plugin for high-performance rendering of multi-year schedules.
-
-Backend: Python (FastAPI) or Node.js (TypeScript) for fast interval checking and data parsing.
+Frontend: Vanilla HTML, tailwind css, and javascript
 
 Database: PostgreSQL (utilizing the btree_gist extension for exclusion constraints on ranges).
 
-Potential Problems
+Potential Problems:
 When two users submit a request almost concurrently, one user must have an error message displayed and their request should be reversed. 
 Users need email code to make a cancellation request.
 
-Future Implementations
+Future Implementations:
 If this project is to be taken further, a user authentication system can be added also using Supabase in order to verify user identity prior to registration and cancellation.
 
 Another cancellation request verification system would be to use supabase’s smtp mail system to email a verification code in order to complete every cancellation request.
