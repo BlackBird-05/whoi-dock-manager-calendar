@@ -6,7 +6,7 @@ When the user selects a date, a pop up should be displayed allowing the user to 
 Tech Stack
 Frontend: Vanilla HTML, tailwind css, and javascript
 
-Database: PostgreSQL (utilizing the btree_gist extension for exclusion constraints on ranges).
+Database: PostgreSQL (Supabase)
 
 Potential Problems:
 When two users submit a request almost concurrently, one user must have an error message displayed and their request should be reversed. 
